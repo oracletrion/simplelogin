@@ -1,0 +1,12 @@
+ 
+<div class="flashes">
+    {% for messages in get_flashed_messages() %}
+      {{ messages }}
+    {% endfor %}
+  </div>
+
+<div><button><a href="change.html" class="btn btn-default">Change Password</a></button></div>
+
+<div><button><a href="{{ url_for('sign_out') }}" class="btn btn-default">Sign Out</a></button></div>
+
+
